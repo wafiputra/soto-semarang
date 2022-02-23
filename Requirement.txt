@@ -1,0 +1,6 @@
+1. Aplikasi hanya dengan satu user dulu
+2. Problem Antrean
+3. Tambah nama pembeli, nomor antrean
+4. Cetak nota  2 kali (Makanan & Minuman) tidak pakai harga
+5. laporan harian langsung ke whatsapp bentuk PDF or image
+6. Warna aplikasi ( Merah, kuning )

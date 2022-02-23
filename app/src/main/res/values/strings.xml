@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="Password">Password</string>
+    <string name="nama_produk">nama_produk</string>
+    <string name="harga_produk">harga_produk</string>
+    <string name="Nama_Produk">Nama_Produk</string>
+    <string name="Harga">Harga</string>
+    <string name="Produk">Nama Produk</string>
+    <string name="Gambar">Ambil Gambar</string>
+    <string name="Pilih">Pilih Gambar</string>
+    <string name="jumlah">0</string>
+    <string name="Pemesan">Nama Pemesan</string>
+    <string name="Date">Date</string>
+    <string name="Date_awal">Tanggal/Bulan/Tahun</string>
+    <string name="Date_akhir">Tanggal/Bulan/Tahun</string>
+</resources>
