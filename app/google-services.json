@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "325623228431",
+    "project_id": "soto-75325",
+    "storage_bucket": "soto-75325.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325623228431:android:f98e8576583831a8655b7a",
+        "android_client_info": {
+          "package_name": "com.android.soto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325623228431-lnjnn7gf5m3cvsja5ed1g3doq2s0cn4d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB53T_d56L_rFhneGyw5pqDZEa2j5QDpmE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325623228431-lnjnn7gf5m3cvsja5ed1g3doq2s0cn4d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
