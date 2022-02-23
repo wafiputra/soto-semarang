@@ -32,10 +32,23 @@ class tambahActivity : AppCompatActivity() {
         val menuId = ref.push().key.toString()
         val menu = Menu(menuId, nama, kategori, satuan)
 
-        if (!menuId.isEmpty()) {
+        if (nama.isEmpty()) {
+            binding.etNama.error = "Nama menu harus di isi !"
+        } else
+        if (kategori.isEmpty()) {
+            binding.etKategori.error = "Kategori menu harus di isi !"
+        }else
+        if (satuan.isEmpty()) {
+            binding.etSatuan.error = "Satuan menu harus di isi !"
+        }else
+
+        if (!menuId.isEmpty() && !nama.isEmpty() && !kategori.isEmpty() && !satuan.isEmpty()) {
             ref.child(menuId).setValue(menu).addOnCompleteListener {
                 Toast.makeText(this, "Berhasil di tambahkan", Toast.LENGTH_SHORT).show()
+
             }
+        } else {
+            Toast.makeText(this, "Data harus di isi !", Toast.LENGTH_SHORT).show()
         }
 
     }
