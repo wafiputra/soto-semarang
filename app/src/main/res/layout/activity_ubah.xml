@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Menu.tambahActivity">
+    tools:context=".Menu.ubahActivity">
 
     <ImageView
         android:id="@+id/ivMenu"
@@ -41,13 +41,25 @@
         app:layout_constraintStart_toStartOf="@+id/etNama"
         app:layout_constraintTop_toBottomOf="@+id/etNama" />
 
+    <EditText
+        android:id="@+id/etSatuan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Satuan Menu"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/etKategori"
+        app:layout_constraintStart_toStartOf="@+id/etKategori"
+        app:layout_constraintTop_toBottomOf="@+id/etKategori" />
+
     <Button
         android:id="@+id/btnSimpan"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Simpan"
-        app:layout_constraintEnd_toEndOf="@+id/etKategori"
-        app:layout_constraintStart_toStartOf="@+id/etKategori"
+        app:layout_constraintEnd_toEndOf="@+id/etSatuan"
+        app:layout_constraintStart_toStartOf="@+id/etSatuan"
         app:layout_constraintTop_toBottomOf="@+id/btnGambar" />
 
     <Button
@@ -65,7 +77,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Upload Gambar"
-        app:layout_constraintEnd_toEndOf="@+id/etKategori"
-        app:layout_constraintStart_toStartOf="@+id/etKategori"
-        app:layout_constraintTop_toBottomOf="@+id/etKategori" />
+        app:layout_constraintEnd_toEndOf="@+id/etSatuan"
+        app:layout_constraintStart_toStartOf="@+id/etSatuan"
+        app:layout_constraintTop_toBottomOf="@+id/etSatuan" />
 </androidx.constraintlayout.widget.ConstraintLayout>

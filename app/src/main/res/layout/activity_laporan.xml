@@ -1,9 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
     tools:context=".Laporan.laporanActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="50dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/back_icon"
+            android:layout_marginLeft="16dp">
+        </Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laporan Bulanan"
+            android:fontFamily="@font/robotocondensed_bold"
+            android:textColor="@color/black"
+            android:textSize="8pt"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="8dp">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="150dp">
+        <TextView
+            android:id="@+id/viewAwal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:padding="20dp" />
+
+        <Button
+            android:id="@+id/btnAwal"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_baseline_date_range_24"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sampai Dengan"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/robotocondensed_regular"
+        android:gravity="center"
+        android:layout_marginTop="250dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="300dp">
+        <TextView
+            android:id="@+id/viewAkhir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:padding="20dp" />
+
+        <Button
+            android:id="@+id/btnAkhir"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_baseline_date_range_24"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnDownload"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="450dp"
+            android:layout_marginRight="160dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/robotocondensed_bold"
+            android:gravity="center"
+            android:text="Download"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="8pt"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

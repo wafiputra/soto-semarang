@@ -25,5 +25,8 @@ class MainActivity : AppCompatActivity() {
         binding.btnLaporan.setOnClickListener {
             startActivity(Intent(this, laporanActivity::class.java))
         }
+        binding.btnPrinter.setOnClickListener {
+            startActivity(Intent(this, printConActivity::class.java))
+        }
     }
 }

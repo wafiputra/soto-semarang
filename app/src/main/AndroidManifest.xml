@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.android.soto">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
     <application
+        tools:replace="android:theme"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Soto">
-        <activity android:name=".Menu.tambahActivity"></activity>
+        android:theme="@style/Theme.Soto"
+        android:name=".applicationClass">
+        <activity android:name=".printConActivity"/>
+        <activity android:name=".Menu.ubahActivity" />
+        <activity android:name=".Menu.gambarActivity" />
+        <activity android:name=".Menu.tambahActivity" />
         <activity android:name=".Pesan.pesanActivity" />
         <activity android:name=".Menu.menuActivity" />
         <activity android:name=".Laporan.laporanActivity" />

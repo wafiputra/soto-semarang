@@ -6,4 +6,85 @@
     android:layout_height="match_parent"
     tools:context=".Pesan.pesanActivity">
 
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="204dp">
+
+        <Button
+            android:id="@+id/btnKembali"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:text="K"
+            android:textSize="11pt" />
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="25dp"
+            android:text="Pesanan"
+            android:textSize="18pt" />
+
+        <Button
+            android:id="@+id/btnLaporan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:text="L"
+            android:textSize="11pt" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etPemesan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="Nama Pemesan"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvListPesanan"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/etPemesan"
+        tools:layout_editor_absoluteX="165dp"
+        android:orientation="horizontal"
+        tools:listitem="@layout/item_list_pesanan"/>
+
+    <Button
+        android:id="@+id/btnPesan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="Pesan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rvListPesanan"
+        app:layout_constraintTop_toBottomOf="@+id/rvListPesanan" />
+
+    <Button
+        android:id="@+id/btnPair"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Pair/Unpair"
+        app:layout_constraintEnd_toEndOf="@+id/btnPesan"
+        app:layout_constraintStart_toStartOf="@+id/btnPesan"
+        app:layout_constraintTop_toBottomOf="@+id/btnPesan" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

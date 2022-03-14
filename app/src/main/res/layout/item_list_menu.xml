@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/ivMenu"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_weight="2.5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="6dp">
+
+        <TextView
+            android:id="@+id/tvMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Menu"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvKategori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Kategori" />
+
+        <TextView
+            android:id="@+id/tvSatuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Satuan" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnUbah"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:text="U"
+                app:layout_constraintEnd_toEndOf="@+id/etSatuan"
+                app:layout_constraintStart_toStartOf="@+id/etSatuan"
+                app:layout_constraintTop_toBottomOf="@+id/etSatuan" />
+
+            <Button
+                android:id="@+id/btnHapus"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:text="H"
+                android:layout_marginLeft="50dp"
+                app:layout_constraintStart_toEndOf="@+id/btnUbah"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
